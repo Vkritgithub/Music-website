@@ -1,0 +1,501 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+    transition: all 500ms;
+    font-family: "Poppins" ;
+}
+#home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    /* flex-basis: 15%; */
+    display: flex;
+    /* background-color: black; */
+    color:black;
+}
+#nav_one{
+    flex-basis:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav_one h1{
+    font-size: 70px;
+    color: #d70a03;
+
+}
+#nav_one span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    position: relative;
+    top:10px;
+    letter-spacing: 2px;
+    left: 3px;
+    color: white;
+}
+#nav_two{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    padding-right: 50px;
+}
+
+#nav_two a{
+    font-family: "Poppins";
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#home_article{
+    /* flex-basis: 85%; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    /* background-image: url('./asset/banner2.jpg'); */
+    background-size: contain auto;
+}
+#home_article h1{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: rgb(229,229,229);
+}
+#home_article h1 span{
+    font-size: 100px;
+    color: red;
+    letter-spacing: 3px;
+}
+#home_article #slogan{
+    font-size:20px;
+    color:white;
+    font-family:"Poppins", serif;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#info button{
+    width: 209px;
+    height: 56px;
+    border: none;
+    background-color: white;
+    color: #d70a03;
+    font-family: "Poppins",serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: all 500ms 0s ease ;
+}
+#info button:hover{
+    color: white;
+    background-color: #d70a03;
+}
+
+body #albums{
+     
+    /* background-color:  rgb(190, 125, 125); */
+    
+    background: linear-gradient(to top, rgb(119, 238, 161) 25%, red 85%);
+     height: max-content;
+     width: 100vw;
+     min-height: 800px;
+     min-width: 1200px;
+     /* background-size: cover; */
+     
+
+}
+#album_title{
+    /* color: rgb(198, 173, 173); */
+    color: white;
+    -webkit-text-stroke: 0.5px rgb(119, 238, 161);
+   
+}
+body{
+     background-color: rgb(204, 137, 70) ;
+    min-height: 800px;
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+#album_title{
+
+    margin: 0px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 60px;
+    font-weight: 600;
+}
+#song_container{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+#song{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 17px;
+    border: 0.5px solid #d6d6d6;
+    transition: all 500ms 0s ease;
+    position: relative;
+    
+
+}
+#song img{
+    width: 100%;
+    height: 220px;
+    border-radius: 17px;
+
+}
+
+#song h1{
+    font-size: 20px;
+    font-family: "Poppins";
+    padding-top: 10px;
+    text-align: center;
+}
+#song p{
+    font-size: 14px;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+#song:hover{
+    scale: 1.02;
+    box-shadow: rgba(0,0,0,0.24)0px 3px 8px;
+}
+#song .play{
+    height: 50px;
+    width: 50px;
+background-color: darkgreen;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 15px;
+    display: none;
+
+}
+#song:hover .play{
+    display: block;
+    height: 50px;
+    width: 50px;
+background-color: red;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    right: 15px;
+    transition: 2s;
+}
+.fa-play{
+    /* color: white; */
+    font-size: 20px;
+    color: white;
+}
+.fa-pause{
+    color: white;
+}
+#bgimg{
+    background-image: url("./asset/banner2.jpg");
+     height: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#Contact{
+    /* background-color:rgb(119, 238, 161); */
+    background: linear-gradient(to top,red,rgb(119, 238, 161) 25%, white 50%);
+    /*rgb(119, 238, 161)*/
+    height: 100vh;
+    width: 100vw;
+}
+/* cONATCT BEGINS */
+#Contact_container{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+#contact_us,#get_in_touch,#new_music{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+
+}
+#contact_us{
+    flex-basis: 25%;
+}
+#contact_us_one{
+    width: 100%;
+}
+#contact_us_one h3{
+    font-size: 30px;
+    text-align:center;
+    right: 16px;
+    position: relative;
+
+}
+#contact_us_two{
+    width: 100%;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    flex-direction: column;
+    padding-left: 40px;
+    left: 9px;
+    position: relative;
+}
+#contact_us_two p{
+    font-size: 14px;
+}
+#contact_us_three{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-right: 5px;
+    position: relative;
+    
+    right: 7px;
+
+}
+.icons{
+    height: 40px;
+    width: 40px;
+    background-color: color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+.icons i{
+    font-size: 29px;
+}
+#get_in_touch{
+    
+    flex-basis: 45%;
+}
+#get_in_touch_one{
+    width: 100%;
+}
+#get_in_touch_two{
+    width: 100%;
+    padding: 50px;
+}
+#get_in_touch_two input,textarea{
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.24);
+}
+[type="submit"]{
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#new_music{
+    flex-basis: 30%;
+}
+#new_music_one{
+    width: 100%;
+}
+#new_music_one h3{
+    font-size: 30px;
+    text-align: center;
+}
+.new_music_two{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    
+
+}
+
+.new_music_two img{
+    height: 110px;
+    border-radius: 17px;
+}
+#get_in_touch_one h3{
+    font-size: 30px;
+    left: 210px;
+    position: relative;
+    
+}
+#sound_bar{
+    height: 100vh;
+    /* background-color: rgb(119, 238, 161); */
+    /* background-color: red; */
+    background:repeating-conic-gradient(red 10%-40%,BLACK 30%-60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    height: max-content;
+    width: 100vw;
+    padding-bottom: 15px;
+    
+
+}
+#sound_bar input{
+    width:80%;
+
+}
+#sound_bar #footer_icons{
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#sound_bar #footer_icons i{
+    border: 1px solid white;
+    /* rgba(0,0,0,1.24) */
+height: 50px;
+width: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+box-shadow: white;
+transition: 300ms;
+}
+#footer_icons i:hover{
+    scale: 1.12;
+}
+#contact_us_two i{
+    right: 7px;
+    
+    position: relative;
+}
+#contact_us_three i{
+    position: relative;
+    right: 10px;
+
+}
+.fa-forward{
+    color: white;
+}
+.fa-backward{
+    color: white;
+}
+#album_name{
+    color: white;
+}
+#song{
+    border:0.1px solid black;
+}
+#nav_two .home:hover{
+color: black;
+scale: 1.18;
+}
+.new_music_two{
+    position: relative;
+    top: 33px;
+}
+#contact_us_two{
+    position: relative;
+    top: 18px;
+
+}
+#contact_us_three  {
+    position: relative;
+    top: 13px;
+    display: flex;
+
+    
+}
+   #fb:hover{
+     display: flex;
+    color: blue;
+    background-color: white;
+    transform: scale(1.5px,1.5px);
+   background-color: white;
+    /* border-radius: 50%; */
+    /* background: rgb(119, 238, 161); */
+    scale: 140%;
+    
+  }
+   #twitt:hover{
+    transform: scale(1.5px,1.5px);
+    scale: 140%;
+   } 
+ 
+
+
+
+ #insta:hover{
+    scale: 140%;
+    color: #ff97be;
+
+}
+ #linked:hover{
+    scale: 140%;
+    color: blue;
+    background-color: white;
+
+}
+#song{
+    border:0.5px solid #d6d6d6;
+}
+#nav_two{
+    flex-basis: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 100px;
+
+}
+.fa-magnifying-glass{
+    position: relative;
+    right: 40px;
+}
+#search_term{
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
